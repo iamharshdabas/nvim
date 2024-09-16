@@ -1,94 +1,89 @@
 return {
-  -- Nordic Blue
   {
-    "AlexvZyl/nordic.nvim",
+    "catppuccin/nvim",
     lazy = false,
     priority = 1000,
-    config = true,
+    name = "catppuccin",
+    opts = {
+      flavour = "mocha", -- mocha or frappe.
+    },
   },
-
-  -- Synth Wave
+  {
+    "scottmckendry/cyberdream.nvim", -- default.
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
+    "decaycs/decay.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = "decayce", -- decayce, dark or default.
+    },
+  },
+  {
+    "0xstepit/flow.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      fluo_color = "pink", -- pink, yellow, orange, or green.
+      mode = "desaturate", -- desaturate, or base.
+    },
+  },
   {
     "maxmx03/fluoromachine.nvim",
     lazy = false,
     priority = 1000,
     opts = {
       glow = false,
-      theme = "fluoromachine",
+      theme = "fluoromachine", -- fluoromachine or retrowave.
     },
   },
-
-  -- Gruvbox Retro
   {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
-    config = true,
-  },
-
-  -- Frosted Glass
-  -- NOTE: use tokyonight
-
-  -- Graphite Mono
-  {
-    "slugbyte/lackluster.nvim",
+    "ellisonleao/gruvbox.nvim", -- retrobox or gruvbox.
     lazy = false,
     priority = 1000,
-    config = true,
+    opts = {},
   },
-
-  -- Edge Runner
-  -- NOTE: set background theme else change it
-  -- {
-  --   "craftzdog/solarized-osaka.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = true,
-  -- },
-
-  -- Decay Green
   {
-    "decaycs/decay.nvim",
+    "slugbyte/lackluster.nvim", -- default, mint or hack.
     lazy = false,
     priority = 1000,
+    opts = {},
+  },
+  {
+    "olimorris/onedarkpro.nvim", -- vivid or default.
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim", -- default.
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "rose-pine/neovim",
+    lazy = false,
+    priority = 1000,
+    name = "rose-pine",
     opts = {
-      style = "dark",
-      nvim_tree = {
-        contrast = true,
-      },
+      variant = "main", -- main or moon.
     },
   },
-
-  -- Material Sakura
-  -- NOTE: use catppuccin latte
-
-  -- Tokyo Night
   {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
+    opts = {
+      style = "night", -- night or moon.
+    },
   },
-
-  -- Rose Pine
-  {
-    "rose-pine/neovim",
-    lazy = false,
-    name = "rose-pine",
-    priority = 1000,
-    config = true,
-  },
-
-  -- Catppuccin
-  {
-    "catppuccin/nvim",
-    lazy = false,
-    name = "catppuccin",
-    priority = 1000,
-  },
-
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "flow",
     },
   },
 }

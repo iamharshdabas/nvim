@@ -9,12 +9,6 @@ return {
     },
   },
   {
-    "scottmckendry/cyberdream.nvim", -- default.
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  {
     "decaycs/decay.nvim",
     lazy = false,
     priority = 1000,
@@ -32,22 +26,7 @@ return {
     },
   },
   {
-    "maxmx03/fluoromachine.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      glow = false,
-      theme = "fluoromachine", -- fluoromachine or retrowave.
-    },
-  },
-  {
     "ellisonleao/gruvbox.nvim", -- retrobox or gruvbox.
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  {
-    "slugbyte/lackluster.nvim", -- default, mint or hack.
     lazy = false,
     priority = 1000,
     opts = {},
@@ -59,11 +38,6 @@ return {
     opts = {},
   },
   {
-    "nyoom-engineering/oxocarbon.nvim", -- default.
-    lazy = false,
-    priority = 1000,
-  },
-  {
     "rose-pine/neovim",
     lazy = false,
     priority = 1000,
@@ -71,6 +45,12 @@ return {
     opts = {
       variant = "main", -- main or moon.
     },
+  },
+  {
+    "tiagovla/tokyodark.nvim", -- default.
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
   {
     "folke/tokyonight.nvim",
@@ -83,7 +63,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "flow",
+      colorscheme = "tokyodark",
     },
   },
 }

@@ -5,6 +5,8 @@ set("n", "<S-x>", function()
   Snacks.bufdelete()
 end, { desc = "Delete Buffer" })
 
+set("n", "<leader>t", "<CMD>Themify<CR>", { desc = "Themify" })
+
 if vim.g.neovide then
   set("v", "<C-S-c>", '"+y') -- Copy
   set("n", "<C-S-v>", '"+P') -- Paste normal mode

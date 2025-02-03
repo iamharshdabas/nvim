@@ -17,10 +17,20 @@ return {
       "ellisonleao/gruvbox.nvim",
       blacklist = {},
     },
+    -- kanagawa
+    {
+      "rebelot/kanagawa.nvim",
+      blacklist = { "kanagawa-lotus" },
+    },
     -- onedarkpro
     {
       "olimorris/onedarkpro.nvim",
       blacklist = { "onedark_dark", "onedark_vivid", "onelight" },
+    },
+    -- onenord
+    {
+      "rmehri01/onenord.nvim",
+      blacklist = { "onenord-light" },
     },
     -- rose-pine
     {

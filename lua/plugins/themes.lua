@@ -1,4 +1,5 @@
 return {
+  -- cold
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -6,12 +7,14 @@ return {
     priority = 1000,
     opts = { transparent_background = true },
   },
+  -- white
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
     opts = { transparent = true },
   },
+  -- warm
   {
     "AlexvZyl/nordic.nvim",
     lazy = false,
@@ -23,6 +26,7 @@ return {
       },
     },
   },
+  -- green
   {
     "rose-pine/neovim",
     name = "rose-pine",
@@ -34,6 +38,7 @@ return {
       },
     },
   },
+  -- red
   {
     "tiagovla/tokyodark.nvim",
     lazy = false,
@@ -42,6 +47,7 @@ return {
       transparent_background = true,
     },
   },
+  -- blue
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -57,7 +63,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyodark",
+      colorscheme = "cyberdream",
     },
   },
 }

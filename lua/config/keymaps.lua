@@ -5,10 +5,10 @@ set("n", "<S-x>", function()
   Snacks.bufdelete()
 end, { desc = "Delete Buffer" })
 
-set("n", "<leader>uRt", function()
+set("n", "<leader>rt", function()
   vim.cmd("ReferencerToggle")
 end, { desc = "Toggle Referencer" })
 
-set("n", "<leader>uRu", function()
+set("n", "<leader>ru", function()
   vim.cmd("ReferencerUpdate")
 end, { desc = "Update Referencer" })

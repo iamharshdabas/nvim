@@ -5,7 +5,10 @@ set("n", "<S-x>", function()
   Snacks.bufdelete()
 end, { desc = "Delete Buffer" })
 
--- Toggle referencer virtual text (shows reference counts)
-set("n", "<leader>uR", function()
+set("n", "<leader>uRt", function()
   vim.cmd("ReferencerToggle")
 end, { desc = "Toggle Referencer" })
+
+set("n", "<leader>uRu", function()
+  vim.cmd("ReferencerUpdate")
+end, { desc = "Update Referencer" })

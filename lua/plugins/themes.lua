@@ -5,14 +5,14 @@ return {
     name = "catppuccin",
     lazy = false,
     priority = 1000,
-    opts = { transparent_background = true },
+    opts = { transparent_background = false },
   },
   -- white
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
-    opts = { transparent = true },
+    opts = { transparent = false },
   },
   -- warm
   {
@@ -21,8 +21,8 @@ return {
     priority = 1000,
     opts = {
       transparent = {
-        bg = true,
-        float = true,
+        bg = false,
+        float = false,
       },
     },
   },
@@ -34,7 +34,7 @@ return {
     priority = 1000,
     opts = {
       styles = {
-        transparency = true,
+        transparency = false,
       },
     },
   },
@@ -44,7 +44,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent_background = true,
+      transparent_background = false,
     },
   },
   -- blue
@@ -53,7 +53,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = true,
+      transparent = false,
       styles = {
         sidebars = "transparent",
         floats = "transparent",
@@ -63,7 +63,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream",
+      colorscheme = "rose-pine",
     },
   },
 }

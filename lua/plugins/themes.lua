@@ -1,3 +1,5 @@
+local is_neovide = vim.g.is_neovide or false
+
 return {
   -- cold
   {
@@ -5,14 +7,14 @@ return {
     name = "catppuccin",
     lazy = false,
     priority = 1000,
-    opts = { transparent_background = false },
+    opts = { transparent_background = not is_neovide },
   },
   -- white
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
-    opts = { transparent = false },
+    opts = { transparent = not is_neovide },
   },
   -- warm
   {
@@ -21,8 +23,8 @@ return {
     priority = 1000,
     opts = {
       transparent = {
-        bg = false,
-        float = false,
+        bg = not is_neovide,
+        float = not is_neovide,
       },
     },
   },
@@ -34,7 +36,7 @@ return {
     priority = 1000,
     opts = {
       styles = {
-        transparency = false,
+        transparency = not is_neovide,
       },
     },
   },
@@ -44,7 +46,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent_background = false,
+      transparent_background = not is_neovide,
     },
   },
   -- blue
@@ -53,10 +55,10 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = false,
+      transparent = not is_neovide,
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+        sidebars = is_neovide and "" or "transparent",
+        floats = is_neovide and "" or "transparent",
       },
     },
   },

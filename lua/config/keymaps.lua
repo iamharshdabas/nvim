@@ -11,4 +11,18 @@ end, { desc = "Toggle Referencer" })
 
 set("n", "<leader>ru", function()
   vim.cmd("ReferencerUpdate")
-end, { desc = "Update Referencer" })
+end, { desc = "Update referencer" })
+
+set("n", "<C-A-i>", function()
+  local g = vim.g
+  if g.is_neovide then
+    g.neovide_opacity = math.min(g.neovide_opacity + 0.05, 1)
+  end
+end, { desc = "Increase Neovide opacity" })
+
+set("n", "<C-A-o>", function()
+  local g = vim.g
+  if g.is_neovide then
+    g.neovide_opacity = math.max(g.neovide_opacity - 0.05, 0)
+  end
+end, { desc = "Decrease Neovide opacity" })

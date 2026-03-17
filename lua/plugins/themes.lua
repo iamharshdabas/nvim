@@ -1,14 +1,6 @@
 local is_neovide = vim.g.is_neovide or false
 
 return {
-  -- cold
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    lazy = false,
-    priority = 1000,
-    opts = { transparent_background = not is_neovide },
-  },
   -- white
   {
     "scottmckendry/cyberdream.nvim",
@@ -16,7 +8,25 @@ return {
     priority = 1000,
     opts = { transparent = not is_neovide },
   },
-  -- warm
+  -- pink
+  {
+    "yonatan-perel/lake-dweller.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = not is_neovide,
+    },
+  },
+  -- red
+  {
+    "tiagovla/tokyodark.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent_background = not is_neovide,
+    },
+  },
+  -- brown
   {
     "AlexvZyl/nordic.nvim",
     lazy = false,
@@ -26,6 +36,15 @@ return {
         bg = not is_neovide,
         float = not is_neovide,
       },
+    },
+  },
+  -- yellow
+  {
+    "oskarnurm/koda.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = not is_neovide,
     },
   },
   -- green
@@ -38,15 +57,6 @@ return {
       styles = {
         transparency = not is_neovide,
       },
-    },
-  },
-  -- red
-  {
-    "tiagovla/tokyodark.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      transparent_background = not is_neovide,
     },
   },
   -- blue
@@ -62,10 +72,18 @@ return {
       },
     },
   },
+  -- purple
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    opts = { transparent_background = not is_neovide },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "koda-dark",
     },
   },
 }
